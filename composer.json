@@ -1,0 +1,6 @@
+{
+    require {
+        silexsilex ^1.3,
+        guzzlehttpguzzle ^6.2
+    }
+}
