@@ -26,9 +26,9 @@ $app->post('/callback', function (Request $request) use ($app) {
             ]),
             'headers' => [
                 'Content-Type' => 'application/json; charset=UTF-8',
-                'X-Line-ChannelID' => getenv('LINE_CHANNEL_ID'),
-                'X-Line-ChannelSecret' => getenv('LINE_CHANNEL_SECRET'),
-                'X-Line-Trusted-User-With-ACL' => getenv('LINE_CHANNEL_MID'),
+                'X-Line-ChannelID' => getenv('1474063906'),
+                'X-Line-ChannelSecret' => getenv('5adc405305f82659ee546429cc86cb60'),
+                'X-Line-Trusted-User-With-ACL' => getenv('uad8d0a29ea46f52741f54eb530f3628f'),
             ],
             'proxy' => [
                 'https' => getenv('FIXIE_URL'),
