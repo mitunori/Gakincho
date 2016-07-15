@@ -31,7 +31,7 @@ $app->post('/callback', function (Request $request) use ($app) {
         ];
         $ch = curl_init("https://trialbot-api.line.me/v1/events");
         curl_setopt($ch, CURLOPT_HTTPPROXYTUNNEL, 1);
-        curl_setopt($ch, CURLOPT_PROXY, getenv('FIXIE_URL'));
+        curl_setopt($ch, CURLOPT_PROXY, getenv('http://fixie:YtTSeeJNlplQiaf@velodrome.usefixie.com:80'));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($post_data));
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
