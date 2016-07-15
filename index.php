@@ -4,7 +4,7 @@ use Symfony\Component\HttpFoundation\Request;
 date_default_timezone_set('Asia/Tokyo');
 $app = new Silex\Application();
 $app->post('    
-https://gakincho-bot.herokuapp.com:443/callback/callback', function (Request $request) use ($app) {
+https://gakincho-bot.herokuapp.com:443/callback', function (Request $request) use ($app) {
     $body = json_decode($request->getContent(), true);
     foreach ($body['result'] as $msg) {
         //fromとメッセージを取得
